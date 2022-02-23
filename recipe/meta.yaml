@@ -1,4 +1,4 @@
-{% set version = "1.5.1" %}
+{% set version = "1.6" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/tigris_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/tigris/tigris_{{ version }}.tar.gz
-  sha256: 79fc0fc1e536df8ab67da02cc2259dc31262e630fbb807314ae3e0d20e552a6a
+  sha256: fa14fbbaf44f5ade1cc92e6e4e4ed2e775bc7c106310711d16b0135a948a1661
 
 build:
   merge_build_host: true  # [win]
