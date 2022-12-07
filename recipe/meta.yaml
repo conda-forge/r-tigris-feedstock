@@ -1,4 +1,4 @@
-{% set version = "1.6.1" %}
+{% set version = "2.0" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,11 +10,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/tigris_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/tigris/tigris_{{ version }}.tar.gz
-  sha256: 927e8da3f7120bcc10f0b4ded95687512693e069f082eea7aea6302a2f1b2db2
+  sha256: 3df2efbe2098a6de4b2d211e63f0da137d3544bab6d92f26deb673fba5c07039
 
 build:
   merge_build_host: true  # [win]
-  number: 1
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
