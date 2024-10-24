@@ -1,6 +1,5 @@
 {% set version = "2.1" %}
 {% set posix = 'm2-' if win else '' %}
-{% set native = 'm2w64-' if win else '' %}
 
 package:
   name: r-tigris
@@ -13,8 +12,7 @@ source:
   sha256: 796bed6ce003323815d606886472bf21c101656fca8a593daa3b69cb3bd6fd97
 
 build:
-  merge_build_host: true  # [win]
-  number: 0
+  number: 1
   noarch: generic
   rpaths:
     - lib/R/lib/
@@ -31,7 +29,6 @@ requirements:
     - r-magrittr
     - r-maptools
     - r-rappdirs
-    - r-rgdal
     - r-sf
     - r-sp
     - r-stringr
@@ -43,7 +40,6 @@ requirements:
     - r-magrittr
     - r-maptools
     - r-rappdirs
-    - r-rgdal
     - r-sf
     - r-sp
     - r-stringr
